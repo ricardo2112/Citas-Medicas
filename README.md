@@ -36,7 +36,7 @@ Administración de pacientes y médicos:
    * Cargar las [Librerías de Java.zip](https://github.com/ricardo2112/Citas-Medicas/files/14670244/Librerias.de.Java.zip) utilizadas
    * Configurar la clase Conexión, con las credenciales de tu servidor MySQL
 
-    *Nota: si desear ejecutar sin necesidad del IDE, configura tu servidor MySQL con las credenciales de la clase conexión. De esta manera podrás ejecutar la aplicación con tan solo un click al [JAR File]().*
+    *Nota: si desear ejecutar sin necesidad del IDE, configura tu servidor MySQL con las credenciales de la clase conexión. De esta manera podrás ejecutar la aplicación con tan solo un click al archivo encontrado [aquí](https://github.com/ricardo2112/Citas-Medicas/tree/main/ProyectoCitasMedicas/store).*
 
 ## Créditos
 
