@@ -24,7 +24,7 @@ Administración de pacientes y médicos:
 1. Clona este repositorio:
 
     ```bash
-    git clone 'https://github.com/ricardo2112/Citas-Medicas.git'
+    git clone https://github.com/ricardo2112/Citas-Medicas.git
     ```
 
 2. Configura la base de datos y otros parámetros:
@@ -37,6 +37,15 @@ Administración de pacientes y médicos:
    * Configurar la clase Conexión, con las credenciales de tu servidor MySQL
 
     *Nota: si desear ejecutar sin necesidad del IDE, configura tu servidor MySQL con las credenciales de la clase conexión. De esta manera podrás ejecutar la aplicación con tan solo un click al archivo encontrado [aquí](https://github.com/ricardo2112/Citas-Medicas/tree/main/ProyectoCitasMedicas/store).*
+## Documentación
+El repositorio cuenta con un espacio dedicado para la documentación del proyecto, incluye:
+- Diagrama de casos de uso.
+- Descripción de casos de uso.
+- Modelo del dominio.
+- Modelo relacional.
+- Diagrama de clases.
+
+Los diagramas y modelos se realizón utilizando la herramienta de "StarUML", puedes descargar el archivo mdj completo [aquí.]()
 
 ## Créditos
 

@@ -20,8 +20,8 @@ public class Conexion {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/citasmedicas";
             String user = "root";
-            String password = "$itasMedicas21"; //            
-
+            String password = "$itasMedicas21";         
+            
             con = DriverManager.getConnection(url, user, password);
             statement = con.createStatement();
             return con;

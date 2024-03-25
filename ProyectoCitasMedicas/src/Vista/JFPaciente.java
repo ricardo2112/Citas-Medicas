@@ -509,7 +509,7 @@ public class JFPaciente extends javax.swing.JFrame {
                 limpiar();
                 bloquear(false);
                 inicializarTabla();
-                JOptionPane.showMessageDialog(null, "El paciente ha sido eliminado con éxito.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                
             }else if(op == JOptionPane.NO_OPTION){
             }
         } else {

@@ -503,8 +503,7 @@ public class JFMedico extends javax.swing.JFrame {
                 medico.setId(Integer.parseInt(this.jTFIdMedico.getText()));
                 medico.eliminar(medico.getId());
                 limpiar();
-                inicializarTabla();
-                JOptionPane.showMessageDialog(null, "El médico ha sido eliminado con éxito.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                inicializarTabla(); 
             }else if(op == JOptionPane.NO_OPTION){
             }
         } else {
@@ -568,6 +567,8 @@ public class JFMedico extends javax.swing.JFrame {
                 limpiar();
                 inicializarTabla();
                 JOptionPane.showMessageDialog(null, "El médico ha sido guardado correctamente.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                JFHorarios horario = new JFHorarios();
+                horario.setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(null, "El número de teléfono no es válido.", "Mensaje", JOptionPane.ERROR_MESSAGE);
             }

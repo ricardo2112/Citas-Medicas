@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 
 public class Medico {
     private int id;
@@ -134,7 +135,11 @@ public class Medico {
             // Cerrar conexiones
             conexion.close();
             statement.close();
+            JOptionPane.showMessageDialog(null, "El médico ha sido eliminado con éxito.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException e) {
+            if (e.toString().contains("DELETE RESTRICT ON UPDATE CASCADE")) {
+                JOptionPane.showMessageDialog(null, "No se puede eliminar un médico con citas médicas registradas.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+            }
             System.err.println(e);
         }
     }

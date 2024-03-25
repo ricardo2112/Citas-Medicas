@@ -122,7 +122,11 @@ public class Paciente {
             //Cerrar conexiones
             conexion.close();
             statement.close();
+            JOptionPane.showMessageDialog(null, "El paciente ha sido eliminado con éxito.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException e) {
+            if (e.toString().contains("DELETE RESTRICT ON UPDATE CASCADE")) {
+                JOptionPane.showMessageDialog(null, "No se puede eliminar un paciente con citas médicas registradas.", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+            }
             System.err.println(e);
         }
     }
